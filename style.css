@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(54, 53, 51);
+    font-family: 'Poppins', sans-serif;
+    background-image: url("https://source.unsplash.com/1600x900/?nature,landscape");
+    /* background: center center no-repeat url('/images/bg2.jpg'); */
+    font-size: 120%;
+}
+
+.box {
+    width: 100%;
+    background-color: rgb(27, 28, 28);
+    color: white;
+    padding: 2.25rem;
+    border-radius: 2.8125rem;
+    max-width: 26.125rem;
+    margin: 0.5rem;
+}
+
+.searchbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    border-radius: 2.25rem;
+    height: 2.25rem;
+}
+
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.4rem 1rem;
+    border-radius: 1.5rem;
+    background-color: rgb(203, 198, 198);
+    font-family: inherit;
+    height: 1.8125rem;
+    width: 70%;
+    font-size: 1.2rem;
+    margin: 1.2rem;
+    
+}
+
+button{
+    border-radius: 50%;
+    margin: 0.1rem;
+    border: none;
+    height: 2.8rem;
+    width: 2.8rem;
+    outline: none;
+    background-color: rgb(203, 198, 198);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: rgb(91, 88, 88);
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading::after{
+    visibility: visible;
+    content: "Get Weather Details by entering city name ";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 18px;
+}
+
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.4rem;
+
+}
+
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
